@@ -1,0 +1,9 @@
+{
+    "name": "b2bTrade",
+    "short_name": "b2b",
+    "start_url": "index.html",
+    "background_color": "#17181a",
+    "theme_color": "#17181a",
+    "description": "Test b2bTrade",
+    "display": "standalone"
+}
