@@ -4,6 +4,8 @@ import { News } from "../sections/News";
 import { Footer } from "../footer/Footer";
 import { Products } from "../sections/Products";
 import sprite from "../../img/sprite.svg";
+import { Providers } from "../sections/Providers";
+import { Purchases } from "../sections/Purchases";
 
 export class App extends React.Component {
     render() {
@@ -48,11 +50,11 @@ App.defaultProps = {
         },
         {
             title: "Поставщики",
-            content: "Поставщики",
+            content: <Providers />,
         },
         {
             title: "Закупки",
-            content: "Закупки",
+            content: <Purchases />,
         },
     ],
 };

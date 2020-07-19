@@ -20,7 +20,7 @@ export class Header extends React.Component {
                     </a>
 
                     <div className="search">
-                        <form className="search__form">
+                        <div className="search__form">
                             <div className="search__inner">
                                 <svg className="search__icon">
                                     <use href={`${sprite}#search`}></use>
@@ -38,7 +38,7 @@ export class Header extends React.Component {
                             <button className="btn" type="submit">
                                 найти
                             </button>
-                        </form>
+                        </div>
                     </div>
 
                     <div className="auth">

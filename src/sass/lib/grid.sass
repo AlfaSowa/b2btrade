@@ -18,6 +18,9 @@
     overflow: hidden
     box-shadow: 0px 1px 2px rgba(43, 59, 77, 0.24)
     cursor: pointer
+    height: 100%
+    display: flex
+    flex-direction: column
 
     &:hover
         box-shadow: 0px 1px 5px rgba(43, 59, 77, 0.2), 0px 3px 4px rgba(43, 59, 77, 0.12), 0px 2px 4px rgba(43, 59, 77, 0.14)
@@ -25,13 +28,20 @@
     &__img
         height: 200px
         background: #444
+        img
+            object-fit: cover
 
     &__content
         padding: 16px
+        flex: 1
+        display: flex
+        flex-direction: column
+        >:not(:last-child)
+            margin-bottom: 16px
 
     &__header
+        flex: 1
         display: flex
-        align-items: center
         &-icon
             fill: $add-color
             width: 20px
@@ -40,6 +50,9 @@
     &__title
         flex: 1
         letter-spacing: 0.15px
+        font-weight: 500
+        font-size: 1.25rem
+        
 
     &__txt
         color: $add-color
@@ -56,19 +69,50 @@
         span
             font-size: 0.75rem
 
+        & + .card__basket
+            margin: 0
+
     &__basket
+        margin: 0 0 0 auto
         &-icon
             width: 18px
             height: 18px
             fill: $font-color-add
             margin: 0 9px 0 0
 
+
+
+.article
+    display: flex
+    background: none
+    box-shadow: none
+    border-radius: 0
+    cursor: auto
+    &:hover
+        box-shadow: none
+
+    &__img
+        flex: 1 0 216px
+        height: 144px
+        background: #444
+
+    &__content
+        padding: 0 0 0 24px
+        >:not(:last-child)
+            margin-bottom: 16px
+
+    &__title
+        letter-spacing: 0.15px
+        font-weight: 500
+        font-size: 1.25rem
+
     &__date
         font-size: 0.875rem
         color: #B1B8C0
 
-    &__article
+    &__txt
         font-size: 0.875rem
         color: #8C949F
         letter-spacing: 0.25px
         line-height: 21px
+
