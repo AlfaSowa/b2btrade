@@ -28,7 +28,7 @@ export class Header extends React.Component {
 
                                 <input className="search__input" type="text" placeholder="Найти" />
 
-                                <select name="" id="">
+                                <select className="search__select" name="" id="">
                                     <option value="везде">везде</option>
                                     <option value="везде">везде</option>
                                     <option value="везде">везде</option>

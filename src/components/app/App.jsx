@@ -6,12 +6,15 @@ import { Products } from "../sections/Products";
 import sprite from "../../img/sprite.svg";
 import { Providers } from "../sections/Providers";
 import { Purchases } from "../sections/Purchases";
+import { Hero } from "../sections/Hero";
 
 export class App extends React.Component {
     render() {
         return (
             <React.Fragment>
                 <Header />
+
+                <Hero />
 
                 <main className="main">
                     {this.props.sections.map((item, index) => (
